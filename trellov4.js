@@ -9,9 +9,9 @@ const myTodos = [{
     isDone: true,
 }]
 
-const findTodo = function(anytdodo, title){
+const findTodo = function(anytdodo, title){         //Using findIndex
     const index = anytdodo.findIndex(function(todo, index){
-        return todo.title.toLowerCase() === title.toLowerCase()
+        return todo.title.toLowerCase() === title.toLowerCase() //This return the index
     })
 
     return index
@@ -20,3 +20,13 @@ const findTodo = function(anytdodo, title){
 
 console.log(`Found at index: ${findTodo(myTodos,'Have Breakfast')}`)
 
+const nfindToDo = function(anytdodo, title){            //Using find
+    const res = anytdodo.find(function(todo, index){
+
+        return todo.title.toLowerCase() === title.toLowerCase()
+    })
+
+    return res
+}
+
+console.log(nfindToDo(myTodos,'Have Breakfast'))
