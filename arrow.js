@@ -14,8 +14,8 @@ const myTodos = [{
     isDone: false
 }]
 
-const thingsDone = myTodos.filter((todo) => {
-    return todo.isDone === true
-})
+const thingsDone = myTodos.filter((todo) =>todo.isDone === true)
+const thingsNotDone = myTodos.filter((todo) =>todo.isDone === false)
 
 console.log(thingsDone)
+thingsDone.forEach((todo, index) => console.log(todo.title))
