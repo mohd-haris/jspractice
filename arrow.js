@@ -3,18 +3,18 @@ const sayHello = (name) => console.log(`Hey, ${name}!`)
 sayHello('Haris')
 
 
-const nTodos = [{
-    title : 'Get up!',
+const myTodos = [{
+    title: 'Get up',
     isDone: true
-}, {
-    title: 'Go for walk',
+},{
+    title: 'Go to walk',
     isDone: true
-}, {
-    title: 'Have Breakfast',
+},{
+    title: 'Have breakfast',
     isDone: false
 }]
 
-const thingsDone = nTodos.filter((todo) => {
+const thingsDone = myTodos.filter((todo) => {
     return todo.isDone === true
 })
 
