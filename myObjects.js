@@ -9,12 +9,13 @@ let myClashRoyale = {
 console.log(`My IGN in Clash Royale is ${myClashRoyale.inGameName}, 
 maximum trophies is ${myClashRoyale.maxTrophies} and favorite card is ${myClashRoyale.favCard}`)
 
-let changeMaxtrophies = function(incTrophies){
-    return{
-        add20: `Adding 20 trophies... ${incTrophies.maxTrophies + 20}`,
-        add30: `Adding 30 trophies... ${incTrophies.maxTrophies + 30}`
-    }
-}
+// let changeMaxtrophies = function(incTrophies){
+//     return{
+//         add20: `Adding 20 trophies... ${incTrophies.maxTrophies + 20}`,
+//         add30: `Adding 30 trophies... ${incTrophies.maxTrophies + 30}`
+//     }
+// }
 
-let addtrophies = changeMaxtrophies(myClashRoyale)
-console.log(addtrophies.add20)
+let addtrophies = myClashRoyale.maxTrophies + 20
+console.log(addtrophies)
+
