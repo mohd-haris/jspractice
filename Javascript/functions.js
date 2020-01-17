@@ -16,9 +16,10 @@ let fullNameMaker = function(firstName,lastName){
 // fullNameMaker('Jane','Doe')
 
 let myAdder = function(num1,num2){
-    result = num1 + num2
+     let result = num1 + num2
     return result
 }
 
+//todo make it one line
 let resultOfAdd = myAdder(2,3)
 console.log(resultOfAdd)

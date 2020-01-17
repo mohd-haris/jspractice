@@ -21,7 +21,7 @@ users.set('sam sung', sam)  // This is used to add entries in the for key-value 
 users.set('john doe', john) // in Map which is users.
 users.set('marry jane', marry)
 
-// console.log(users)
+console.log(users)
 console.log(users.size)  //We can check number os entries in the Map which is not possible in th object
 
 console.log(users.get('sam sung').name) //This is used to get any entry in the map by it's key
